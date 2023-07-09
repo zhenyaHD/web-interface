@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Веб-интерфейс чатов</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/style.css') }}">
+
+  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> -->
+  <script src="/static/scripts/script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar">
+    <button class="newChatButton" onclick="createNewChat();">Новый чат</button><hr>
+    <div id="chatList"></div><hr>
+    <button class="sidebarButton">Какая-то кнопка</button>
+    <button class="sidebarButton">Какая-то кнопка</button>
+    <button class="sidebarButton">Какая-то кнопка</button>
+    <button class="sidebarButton">Какая-то кнопка</button>
+  </div>
+  <div id="content" align="center">
+    <div id="chatWindow"></div>
+    <textarea type="text" id="inputMessage" placeholder="Введите свой текст ..."></textarea><br>
+    <button type="submit" id="sendMessageButton" onclick="sendMessage();">Отправить</button>
+  </div>
+  <div id="form">
+    
+  </div>
+</body>
+</html>
